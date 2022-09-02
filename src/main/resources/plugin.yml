@@ -1,0 +1,10 @@
+name: rank-system-plugin
+version: '${project.version}'
+main: com.jack.ranksystem.Main
+api-version: 1.16
+authors: [ Jack ]
+description: Simple plugin to introduce a rank system to the server.
+commands:
+  rank:
+    description: .
+    usage: /<command>
