@@ -4,8 +4,8 @@ import org.bukkit.ChatColor;
 
 public enum Rank {
 
-    KAGE(ChatColor.RED + "Kage", new String[]{"worldedit.help"}),
-    JONIN(ChatColor.AQUA + "Jonin", new String[]{"worldedit.help"}),
+    KAGE(ChatColor.RED + "Kage", new String[]{"crescentmoon.enma"}),
+    JONIN(ChatColor.AQUA + "Jonin", new String[]{}),
     CHUNIN(ChatColor.YELLOW + "Chunin", new String[]{}),
     GENIN(ChatColor.DARK_GREEN + "Genin", new String[]{}),
     ACADEMY(ChatColor.GRAY + "Academy", new String[]{});
