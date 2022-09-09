@@ -37,7 +37,7 @@ public class RankCommand implements CommandExecutor {
                         if (rank.name().equalsIgnoreCase(args[1])) {
                             main.getRankManager().setRank(target.getUniqueId(), rank, false);
 
-                            player.sendMessage("§aYou changed " + target.getName() + " 's rank to " + rank.getDisplay() + "§a.");
+                            player.sendMessage("§aYou changed " + target.getName() + "'s rank to " + rank.getDisplay() + "§a.");
                             if (target.isOnline()) {
                                 target.getPlayer().sendMessage("§a" + player.getName() + " set your rank to " + rank.getDisplay() + "§a.");
                             }
