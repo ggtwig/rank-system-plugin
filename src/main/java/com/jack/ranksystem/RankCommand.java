@@ -37,23 +37,23 @@ public class RankCommand implements CommandExecutor {
                         if (rank.name().equalsIgnoreCase(args[1])) {
                             main.getRankManager().setRank(target.getUniqueId(), rank, false);
 
-                            player.sendMessage(ChatColor.GREEN + "You changed " + target.getName() + " 's rank to " + rank.getDisplay() + ChatColor.GREEN + ".");
+                            player.sendMessage("§aYou changed " + target.getName() + " 's rank to " + rank.getDisplay() + "§a.");
                             if (target.isOnline()) {
-                                target.getPlayer().sendMessage(ChatColor.GREEN + player.getName() + " set your rank to " + rank.getDisplay() + ChatColor.GREEN + ".");
+                                target.getPlayer().sendMessage("§a" + player.getName() + " set your rank to " + rank.getDisplay() + "§a.");
                             }
                             return true;
                         }
                     }
 
-                    player.sendMessage(ChatColor.RED + "You did not specify a valid rank!");
+                    player.sendMessage("§cYou did not specify a valid rank!");
                 } else {
-                    player.sendMessage(ChatColor.RED + "This user has never joined the server before!");
+                    player.sendMessage("§cThis user has never joined the server before!");
                 }
             } else {
-                player.sendMessage(ChatColor.RED + "Invalid usage! Please use /rank <player> <rank>");
+                player.sendMessage("§cInvalid usage! Please use /rank <player> <rank>");
             }
         } else {
-            player.sendMessage(ChatColor.RED + "You must be OP to use this command!");
+            player.sendMessage("§cYou must be OP to use this command!");
         }
 
 

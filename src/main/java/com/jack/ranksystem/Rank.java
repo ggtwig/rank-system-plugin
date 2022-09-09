@@ -4,11 +4,11 @@ import org.bukkit.ChatColor;
 
 public enum Rank {
 
-    KAGE(ChatColor.RED + "Kage", new String[]{"crescentmoon.enma"}),
-    JONIN(ChatColor.AQUA + "Jonin", new String[]{}),
-    CHUNIN(ChatColor.YELLOW + "Chunin", new String[]{}),
-    GENIN(ChatColor.DARK_GREEN + "Genin", new String[]{}),
-    ACADEMY(ChatColor.GRAY + "Academy", new String[]{});
+    KAGE("§cKage", new String[]{"crescentmoon.enma"}),
+    JONIN("§bJonin", new String[]{}),
+    CHUNIN("§eChunin", new String[]{}),
+    GENIN("§2Genin", new String[]{}),
+    ACADEMY("§7Academy", new String[]{});
 
     private String display;
     private String[] permissions;
